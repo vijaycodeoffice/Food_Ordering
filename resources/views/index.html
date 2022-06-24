@@ -1,0 +1,1098 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>  Dashboard  | Bravia Hotels - Admin & Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Bravia Hotels Admin & Dashboard" name="description" />
+    <meta content="Bravia Hotels" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link href="./assets/libs/jquery-vectormap.min.css" rel="stylesheet"
+        type="text/css" />
+
+ <link rel="stylesheet" href="./assets/css/preloader.min.css" type="text/css" />
+ <!-- Bootstrap Css -->
+ <link href="./assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet"
+     type="text/css" />
+ <!-- Icons Css -->
+ <link href="./assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+ <!-- App Css-->
+ <link href="./assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+</head>
+
+
+
+<body class="pace-done">
+    
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        <header id="page-topbar">
+    <div class="navbar-header">
+        <div class="d-flex">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <a href="index" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="./assets/images/logo.png" alt="" height="60">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="./assets/images/logo.png" alt="" height="60"> <span class="logo-txt">Bravia Hotels</span>
+                    </span>
+                </a>
+
+                <a href="index" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="./assets/images/logo.png" alt="" height="60">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="./assets/images/logo.png" alt="" height="60"> <span class="logo-txt">Bravia Hotels</span>
+                    </span>
+                </a>
+            </div>
+
+            
+
+          
+        </div>
+
+        <div class="d-flex">
+
+           
+
+           
+            </div>
+
+            <div class="dropdown d-none d-sm-inline-block">
+                <button type="button" class="btn header-item" id="mode-setting-btn">
+                    <i data-feather="moon" class="icon-lg layout-mode-dark"></i>
+                    <i data-feather="sun" class="icon-lg layout-mode-light"></i>
+                </button>
+            </div>
+
+           
+
+            <div class="dropdown d-inline-block">
+                <button type="button" class="btn header-item noti-icon position-relative"
+                    id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i data-feather="bell" class="icon-lg"></i>
+                    <span class="badge bg-danger rounded-pill">5</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                    aria-labelledby="page-header-notifications-dropdown">
+                    <div class="p-3">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h6 class="m-0"> Notifications </h6>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#!" class="small text-reset text-decoration-underline"> Unread (3)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-simplebar style="max-height: 230px;">
+                        <a href="#!" class="text-reset notification-item">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 me-3">
+                                    <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-sm"
+                                        alt="user-pic">
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">James Lemire</h6>
+                                    <div class="font-size-13 text-muted">
+                                        <p class="mb-1">It will seem like simplified English.</p>
+                                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hours
+                                                ago</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#!" class="text-reset notification-item">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 avatar-sm me-3">
+                                    <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                        <i class="bx bx-cart"></i>
+                                    </span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">Your order is placed</h6>
+                                    <div class="font-size-13 text-muted">
+                                        <p class="mb-1">If several languages coalesce the grammar</p>
+                                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>3 min
+                                                ago</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#!" class="text-reset notification-item">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 avatar-sm me-3">
+                                    <span class="avatar-title bg-success rounded-circle font-size-16">
+                                        <i class="bx bx-badge-check"></i>
+                                    </span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">Your item is shipped</h6>
+                                    <div class="font-size-13 text-muted">
+                                        <p class="mb-1">If several languages coalesce the grammar</p>
+                                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>3 min
+                                                ago</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#!" class="text-reset notification-item">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 me-3">
+                                    <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-sm"
+                                        alt="user-pic">
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">Salena Layfield</h6>
+                                    <div class="font-size-13 text-muted">
+                                        <p class="mb-1">As a skeptical Cambridge friend of mine occidental.</p>
+                                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hours
+                                                ago</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-2 border-top d-grid">
+                        <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                            <i class="mdi mdi-arrow-right-circle me-1"></i> <span>View More..</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+           
+
+            <div class="dropdown d-inline-block">
+                <button type="button" class="btn header-item bg-soft-light border-start border-end"
+                    id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="rounded-circle header-profile-user"
+                        src="assets/images/avatar-1.png"
+                        alt="Header Avatar">
+                    <span class="d-none d-xl-inline-block ms-1 fw-medium">admin</span>
+                    <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end">
+                    <!-- item-->
+                    <a class="dropdown-item" href="apps-contacts-profile"><i
+                            class="mdi mdi-face-profile font-size-16 align-middle me-1"></i> Profile</a>
+                   
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-danger" href="javascript:void();"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
+                            class="mdi mdi-logout font-size-16 align-middle me-1"></i> <span key="t-logout">Log
+                            Out</span></a>
+                    <form id="logout-form" action="logout" method="POST" style="display: none;">
+                        <input type="hidden" name="_token" value="">                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+        <!-- ========== Left Sidebar Start ========== -->
+<div class="vertical-menu">
+
+    <div data-simplebar class="h-100">
+
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+            <!-- Left Menu Start -->
+            <ul class="metismenu list-unstyled" id="side-menu">
+                <li class="menu-title" data-key="t-menu">Left Sidebar</li>
+
+                <li>
+                    <a href="index">
+                        <i data-feather="home"></i>
+                        <span data-key="t-dashboard">Dashboard</span>
+                    </a>
+                </li>
+				
+				 <li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                        <i data-feather="grid"></i>
+						
+                        <span data-key="t-apps">Hotels</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li>
+                            <a href="apps-calendar">
+                                <span data-key="t-calendar">Add Hotels</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="apps-chat">
+                                <span data-key="t-chat">Hotels List</span>
+                            </a>
+                        </li>
+
+                     
+                      
+                     
+                    </ul>
+                </li>
+				
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                        <i data-feather="grid"></i>
+                        <span data-key="t-apps">Menu</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li>
+                            <a href="apps-calendar">
+                                <span data-key="t-calendar">Add Menu</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="apps-chat">
+                                <span data-key="t-chat">Menu List</span>
+                            </a>
+                        </li>
+
+                     
+                      
+                     
+                    </ul>
+                </li>
+				
+				
+				<li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                        <i data-feather="grid"></i>
+                        <span data-key="t-apps">Items</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li>
+                            <a href="apps-calendar">
+                                <span data-key="t-calendar">Add Items</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="apps-chat">
+                                <span data-key="t-chat">Items List</span>
+                            </a>
+                        </li>
+
+                     
+                      
+                     
+                    </ul>
+                </li>
+				
+				
+					<li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                        <i data-feather="grid"></i>
+                        <span data-key="t-apps">Add-ons</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li>
+                            <a href="apps-calendar">
+                                <span data-key="t-calendar">Add Add-ons</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="apps-chat">
+                                <span data-key="t-chat">Add-ons List</span>
+                            </a>
+                        </li>
+
+                     
+                      
+                     
+                    </ul>
+                </li>
+				
+				
+					<li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                        <i data-feather="grid"></i>
+                        <span data-key="t-apps">Options</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li>
+                            <a href="apps-calendar">
+                                <span data-key="t-calendar">Add Options</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="apps-chat">
+                                <span data-key="t-chat">Options List</span>
+                            </a>
+                        </li>
+
+                     
+                      
+                     
+                    </ul>
+                </li>
+				
+				
+				<li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                        <i data-feather="grid"></i>
+                        <span data-key="t-apps">Items Types</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li>
+                            <a href="apps-calendar">
+                                <span data-key="t-calendar">Add Items Types</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="apps-chat">
+                                <span data-key="t-chat">Items Types List</span>
+                            </a>
+                        </li>
+
+                     
+                      
+                     
+                    </ul>
+                </li>
+				
+				
+					<li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                        <i data-feather="grid"></i>
+                        <span data-key="t-apps">Tables</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li>
+                            <a href="apps-calendar">
+                                <span data-key="t-calendar">Add Tables</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="apps-chat">
+                                <span data-key="t-chat">Tables List</span>
+                            </a>
+                        </li>
+
+                     
+                      
+                     
+                    </ul>
+                </li>
+				
+				
+				
+				<li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                        <i data-feather="grid"></i>
+                        <span data-key="t-apps">Offers</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li>
+                            <a href="apps-calendar">
+                                <span data-key="t-calendar">Add Offers</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="apps-chat">
+                                <span data-key="t-chat">Items Offers</span>
+                            </a>
+                        </li>
+
+                     
+                      
+                     
+                    </ul>
+                </li>
+				
+				
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                        <i data-feather="users"></i>
+                        <span data-key="t-authentication">Users</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="auth-login" data-key="t-login">Kichen Manager</a></li>
+                        <li><a href="auth-register" data-key="t-register">Delivery manager</a></li>
+                      
+                    </ul>
+                </li>
+				
+				
+				   <li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                        <i data-feather="users"></i>
+                        <span data-key="t-authentication">Customers</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="auth-login" data-key="t-login">Add Customers</a></li>
+                        <li><a href="auth-register" data-key="t-register">Customers List</a></li>
+                      
+                    </ul>
+                </li>
+				
+				   <li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                      <i data-feather="grid"></i>
+                        <span data-key="t-authentication">Orders</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="auth-login" data-key="t-login">Add Orders</a></li>
+                        <li><a href="auth-register" data-key="t-register">Orders List</a></li>
+                      
+                    </ul>
+                </li>
+				
+				
+				  <li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                      <i data-feather="grid"></i>
+                        <span data-key="t-authentication">Langauge Settings</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="auth-login" data-key="t-login">Add Langauge</a></li>
+                        <li><a href="auth-register" data-key="t-register">Langauge List</a></li>
+                      
+                    </ul>
+                </li>
+				
+				
+				
+					  <li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                      <i data-feather="grid"></i>
+                        <span data-key="t-authentication">Loyality Points</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="auth-login" data-key="t-login">Add Loyality Points</a></li>
+                        <li><a href="auth-register" data-key="t-register">Loyality Points List</a></li>
+                      
+                    </ul>
+                </li>
+				
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                      <i data-feather="grid"></i>
+                        <span data-key="t-authentication">Referral Settings</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="auth-login" data-key="t-login">Add Referral</a></li>
+                        <li><a href="auth-register" data-key="t-register">Referral List</a></li>
+                      
+                    </ul>
+                </li>
+
+               
+
+                <li class="menu-title mt-2" data-key="t-components">Reports</li>
+
+              
+
+             
+
+              
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                        <i data-feather="sliders"></i>
+                        <span data-key="t-tables">Reports</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="tables-basic" data-key="t-basic-tables">Reports</a>
+                        </li>
+                       
+                    </ul>
+                </li>
+
+            
+
+            
+
+
+             
+
+            </ul>
+
+           
+        </div>
+        <!-- Sidebar -->
+    </div>
+</div>
+<!-- Left Sidebar End -->
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+            <div class="page-content">
+                <div class="container-fluid">
+                    
+    <!-- start page title -->
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+            <h4 class="mb-sm-0 font-size-18">Dashboard</h4>
+
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                                            <li class="breadcrumb-item active">Dashboard</li>
+                                    </ol>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- end page title -->
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <!-- card -->
+            <div class="card card-h-100">
+                <!-- card body -->
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <span class="text-muted mb-3 lh-1 d-block text-truncate">Menu</span>
+                            <h4 class="mb-3">
+                                <span class="counter-value" data-target="">10</span>
+                            </h4>
+                        </div>
+
+                        <div class="col-6">
+                            <div id="mini-chart1" data-colors='["#5156be"]' class="apex-charts mb-2"></div>
+                        </div>
+                    </div>
+                    <div class="text-nowrap">
+                        <span class="badge bg-soft-success text-success"><a href="#">View</a></span>
+                       
+                    </div>
+                </div><!-- end card body -->
+            </div><!-- end card -->
+        </div><!-- end col -->
+
+        <div class="col-xl-3 col-md-6">
+            <!-- card -->
+            <div class="card card-h-100">
+                <!-- card body -->
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <span class="text-muted mb-3 lh-1 d-block text-truncate">Items</span>
+                            <h4 class="mb-3">
+                                <span class="counter-value" data-target="10">10</span>
+                            </h4>
+                        </div>
+                        <div class="col-6">
+                            <div id="mini-chart2" data-colors='["#5156be"]' class="apex-charts mb-2"></div>
+                        </div>
+                    </div>
+                    <div class="text-nowrap">
+                        <span class="badge bg-soft-success text-success"><a href="#">View</a></span>
+                      
+                    </div>
+                </div><!-- end card body -->
+            </div><!-- end card -->
+        </div><!-- end col-->
+
+        <div class="col-xl-3 col-md-6">
+            <!-- card -->
+            <div class="card card-h-100">
+                <!-- card body -->
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <span class="text-muted mb-3 lh-1 d-block text-truncate">Add-ons</span>
+                            <h4 class="mb-3">
+                                <span class="counter-value" data-target="44">11</span>
+                            </h4>
+                        </div>
+                        <div class="col-6">
+                            <div id="mini-chart3" data-colors='["#5156be"]' class="apex-charts mb-2"></div>
+                        </div>
+                    </div>
+                    <div class="text-nowrap">
+                        <span class="badge bg-soft-success text-success"><a href="#">View</a></span>
+                    
+                    </div>
+                </div><!-- end card body -->
+            </div><!-- end card -->
+        </div><!-- end col -->
+
+        <div class="col-xl-3 col-md-6">
+            <!-- card -->
+            <div class="card card-h-100">
+                <!-- card body -->
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <span class="text-muted mb-3 lh-1 d-block text-truncate">Options</span>
+                            <h4 class="mb-3">
+                                <span class="counter-value" data-target="57">10</span>
+                            </h4>
+                        </div>
+                        <div class="col-6">
+                            <div id="mini-chart4" data-colors='["#5156be"]' class="apex-charts mb-2"></div>
+                        </div>
+                    </div>
+                    <div class="text-nowrap">
+                      <span class="badge bg-soft-success text-success"><a href="#">View</a></span>
+                       
+                    </div>
+                </div><!-- end card body -->
+            </div><!-- end card -->
+        </div><!-- end col -->
+    </div><!-- end row-->
+	
+	<!-- second row -->
+	
+	 <div class="row">
+	 
+	 
+	 <div class="col-xl-3 col-md-6">
+            <!-- card -->
+            <div class="card card-h-100">
+                <!-- card body -->
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <span class="text-muted mb-3 lh-1 d-block text-truncate">Offers</span>
+                            <h4 class="mb-3">
+                                <span class="counter-value" data-target="">10</span>
+                            </h4>
+                        </div>
+
+                        <div class="col-6">
+                            <div id="mini-chart1" data-colors='["#5156be"]' class="apex-charts mb-2"></div>
+                        </div>
+                    </div>
+                    <div class="text-nowrap">
+                        <span class="badge bg-soft-success text-success"><a href="#">View</a></span>
+                       
+                    </div>
+                </div><!-- end card body -->
+            </div><!-- end card -->
+        </div><!-- end col -->
+
+        <div class="col-xl-3 col-md-6">
+            <!-- card -->
+            <div class="card card-h-100">
+                <!-- card body -->
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <span class="text-muted mb-3 lh-1 d-block text-truncate">Customers</span>
+                            <h4 class="mb-3">
+                                <span class="counter-value" data-target="10">10</span>
+                            </h4>
+                        </div>
+                        <div class="col-6">
+                            <div id="mini-chart2" data-colors='["#5156be"]' class="apex-charts mb-2"></div>
+                        </div>
+                    </div>
+                    <div class="text-nowrap">
+                        <span class="badge bg-soft-success text-success"><a href="#">View</a></span>
+                      
+                    </div>
+                </div><!-- end card body -->
+            </div><!-- end card -->
+        </div><!-- end col-->
+
+        <div class="col-xl-3 col-md-6">
+            <!-- card -->
+            <div class="card card-h-100">
+                <!-- card body -->
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <span class="text-muted mb-3 lh-1 d-block text-truncate">Orders</span>
+                            <h4 class="mb-3">
+                                <span class="counter-value" data-target="44">11</span>
+                            </h4>
+                        </div>
+                        <div class="col-6">
+                            <div id="mini-chart3" data-colors='["#5156be"]' class="apex-charts mb-2"></div>
+                        </div>
+                    </div>
+                    <div class="text-nowrap">
+                        <span class="badge bg-soft-success text-success"><a href="#">View</a></span>
+                    
+                    </div>
+                </div><!-- end card body -->
+            </div><!-- end card -->
+        </div><!-- end col -->
+
+        <div class="col-xl-3 col-md-6">
+            <!-- card -->
+            <div class="card card-h-100">
+                <!-- card body -->
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <span class="text-muted mb-3 lh-1 d-block text-truncate">Tables</span>
+                            <h4 class="mb-3">
+                                <span class="counter-value" data-target="57">10</span>
+                            </h4>
+                        </div>
+                        <div class="col-6">
+                            <div id="mini-chart4" data-colors='["#5156be"]' class="apex-charts mb-2"></div>
+                        </div>
+                    </div>
+                    <div class="text-nowrap">
+                      <span class="badge bg-soft-success text-success"><a href="#">View</a></span>
+                       
+                    </div>
+                </div><!-- end card body -->
+            </div><!-- end card -->
+        </div><!-- end col -->
+	 
+	 
+	 
+	 
+	 
+	 </div>
+	
+	
+	
+	
+
+    <div class="row">
+        <div class="col-xl-6">
+            <!-- card -->
+            <div class="card card-h-100">
+                <!-- card body -->
+                <div class="card-body">
+                    <div class="d-flex flex-wrap align-items-center mb-6">
+                        <h5 class="card-title me-2">Orders</h5>
+                        <div class="ms-auto">
+                         
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center">
+                        <div class="col-sm">
+                            <div id="wallet-balance" data-colors='["#777aca", "#5156be", "#a8aada"]' class="apex-charts">
+                            </div>
+                        </div>
+                        <div class="col-sm align-self-center">
+                            <div class="mt-4 mt-sm-0">
+                                <div>
+                                    <p class="mb-2"><i
+                                            class="mdi mdi-circle align-middle font-size-10 me-2 text-success"></i> Today Order
+                                    </p>
+                                    <h6>Orders = <span class="text-muted font-size-14 fw-normal">32</span></h6>
+                                </div>
+
+                                <div class="mt-4 pt-2">
+                                    <p class="mb-2"><i
+                                            class="mdi mdi-circle align-middle font-size-10 me-2 text-primary"></i> Last Week
+                                    </p>
+                                    <h6>Orders = <span class="text-muted font-size-14 fw-normal">64</span></h6>
+                                </div>
+
+                                <div class="mt-4 pt-2">
+                                    <p class="mb-2"><i class="mdi mdi-circle align-middle font-size-10 me-2 text-info"></i>
+                                        Last Month</p>
+                                    <h6>Orders = <span class="text-muted font-size-14 fw-normal">109</span></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end card -->
+        </div>
+        <!-- end col -->
+        <div class="col-xl-6">
+            <div class="row">
+               
+                <!-- end col -->
+
+                <div class="col-xl-8">
+                    <!-- card -->
+                    <div class="card bg-primary text-white shadow-primary card-h-100">
+                        <!-- card body -->
+                        <div class="card-body p-0">
+                            <div id="carouselExampleCaptions" class="carousel slide text-center widget-carousel"
+                                data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="text-center p-4">
+                                            <i class="mdi mdi-bitcoin widget-box-1-icon"></i>
+                                            <div class="avatar-md m-auto">
+                                                <span
+                                                    class="avatar-title rounded-circle bg-soft-light text-white font-size-24">
+                                                    <i class="mdi mdi-currency-btc"></i>
+                                                </span>
+                                            </div>
+                                            <h4 class="mt-3 lh-base fw-normal text-white"><b>New</b> Offers</h4>
+                                            <p class="text-white-50 font-size-13">ggg prices fell sharply amid the
+                                                global sell-off in equities. Negative news
+                                                over the ggg past week has dampened ggg basics
+                                                sentiment for ggg. </p>
+                                            <button type="button" class="btn btn-light btn-sm">View details <i
+                                                    class="mdi mdi-arrow-right ms-1"></i></button>
+                                        </div>
+                                    </div>
+                                    <!-- end carousel-item -->
+                                    <div class="carousel-item">
+                                        <div class="text-center p-4">
+                                            <i class="mdi mdi-ethereum widget-box-1-icon"></i>
+                                            <div class="avatar-md m-auto">
+                                                <span
+                                                    class="avatar-title rounded-circle bg-soft-light text-white font-size-24">
+                                                    <i class="mdi mdi-ethereum"></i>
+                                                </span>
+                                            </div>
+                                            <h4 class="mt-3 lh-base fw-normal text-white"><b>Offers</b> New</h4>
+                                            <p class="text-white-50 font-size-13">ff prices fell sharply amid the
+                                                global sell-off in equities. Negative news
+                                                over the f past week has dampened f basics
+                                                sentiment for f. </p>
+                                            <button type="button" class="btn btn-light btn-sm">View details <i
+                                                    class="mdi mdi-arrow-right ms-1"></i></button>
+                                        </div>
+                                    </div>
+                                    <!-- end carousel-item -->
+                                    <div class="carousel-item">
+                                        <div class="text-center p-4">
+                                            <i class="mdi mdi-litecoin widget-box-1-icon"></i>
+                                            <div class="avatar-md m-auto">
+                                                <span
+                                                    class="avatar-title rounded-circle bg-soft-light text-white font-size-24">
+                                                    <i class="mdi mdi-litecoin"></i>
+                                                </span>
+                                            </div>
+                                            <h4 class="mt-3 lh-base fw-normal text-white"><b>Offers</b> New</h4>
+                                            <p class="text-white-50 font-size-13">fff prices fell sharply amid the
+                                                global sell-off in equities. Negative news
+                                                over the ff past week has dampened ff basics
+                                                sentiment for f. </p>
+                                            <button type="button" class="btn btn-light btn-sm">View details <i
+                                                    class="mdi mdi-arrow-right ms-1"></i></button>
+                                        </div>
+                                    </div>
+                                    <!-- end carousel-item -->
+                                </div>
+                                <!-- end carousel-inner -->
+
+                                <div class="carousel-indicators carousel-indicators-rounded">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
+                                <!-- end carousel-indicators -->
+                            </div>
+                            <!-- end carousel -->
+                        </div>
+                        <!-- end card body -->
+                    </div>
+                    <!-- end card -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end col -->
+    </div> <!-- end row-->
+
+   
+
+
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+            <footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> © Bravia Hotels.
+            </div>
+            <div class="col-sm-6">
+                <div class="text-sm-end d-none d-sm-block">
+                    Design & Develop by <a href="#!" class="text-decoration-underline">Agaati</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        </div>
+        <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- Right Sidebar -->
+    <div class="right-bar">
+  
+         <div class="rightbar-title d-flex align-items-center bg-dark p-3">
+
+             <h5 class="m-0 me-2 text-white">Theme Customizer</h5>
+
+             <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+                 <i class="mdi mdi-close noti-icon"></i>
+             </a>
+         </div>
+
+         <!-- Settings -->
+         <hr class="m-0" />
+
+         <div class="p-4">
+             <h6 class="mb-3">Layout</h6>
+             <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="layout" id="layout-vertical" value="vertical">
+                 <label class="form-check-label" for="layout-vertical">Vertical</label>
+             </div>
+             <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="layout" id="layout-horizontal" value="horizontal">
+                 <label class="form-check-label" for="layout-horizontal">Horizontal</label>
+             </div>
+
+             <h6 class="mt-4 mb-3 pt-2">Layout Mode</h6>
+
+             <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="layout-mode" id="layout-mode-light" value="light">
+                 <label class="form-check-label" for="layout-mode-light">Light</label>
+             </div>
+             <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="layout-mode" id="layout-mode-dark" value="dark">
+                 <label class="form-check-label" for="layout-mode-dark">Dark</label>
+             </div>
+
+             <h6 class="mt-4 mb-3 pt-2">Layout Width</h6>
+
+             <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="layout-width" id="layout-width-fuild" value="fuild"
+                     onchange="document.body.setAttribute('data-layout-size', 'fluid')">
+                 <label class="form-check-label" for="layout-width-fuild">Fluid</label>
+             </div>
+             <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="layout-width" id="layout-width-boxed" value="boxed"
+                     onchange="document.body.setAttribute('data-layout-size', 'boxed')">
+                 <label class="form-check-label" for="layout-width-boxed">Boxed</label>
+             </div>
+
+             <h6 class="mt-4 mb-3 pt-2">Layout Position</h6>
+
+             <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="layout-position" id="layout-position-fixed"
+                     value="fixed" onchange="document.body.setAttribute('data-layout-scrollable', 'false')">
+                 <label class="form-check-label" for="layout-position-fixed">Fixed</label>
+             </div>
+             <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="layout-position" id="layout-position-scrollable"
+                     value="scrollable" onchange="document.body.setAttribute('data-layout-scrollable', 'true')">
+                 <label class="form-check-label" for="layout-position-scrollable">Scrollable</label>
+             </div>
+
+             <h6 class="mt-4 mb-3 pt-2">Topbar Color</h6>
+
+             <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="topbar-color" id="topbar-color-light" value="light"
+                     onchange="document.body.setAttribute('data-topbar', 'light')">
+                 <label class="form-check-label" for="topbar-color-light">Light</label>
+             </div>
+             <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="topbar-color" id="topbar-color-dark" value="dark"
+                     onchange="document.body.setAttribute('data-topbar', 'dark')">
+                 <label class="form-check-label" for="topbar-color-dark">Dark</label>
+             </div>
+
+             <h6 class="mt-4 mb-3 pt-2 sidebar-setting">Sidebar Size</h6>
+
+             <div class="form-check sidebar-setting">
+                 <input class="form-check-input" type="radio" name="sidebar-size" id="sidebar-size-default"
+                     value="default" onchange="document.body.setAttribute('data-sidebar-size', 'lg')">
+                 <label class="form-check-label" for="sidebar-size-default">Default</label>
+             </div>
+             <div class="form-check sidebar-setting">
+                 <input class="form-check-input" type="radio" name="sidebar-size" id="sidebar-size-compact"
+                     value="compact" onchange="document.body.setAttribute('data-sidebar-size', 'md')">
+                 <label class="form-check-label" for="sidebar-size-compact">Compact</label>
+             </div>
+             <div class="form-check sidebar-setting">
+                 <input class="form-check-input" type="radio" name="sidebar-size" id="sidebar-size-small" value="small"
+                     onchange="document.body.setAttribute('data-sidebar-size', 'sm')">
+                 <label class="form-check-label" for="sidebar-size-small">Small (Icon View)</label>
+             </div>
+
+             <h6 class="mt-4 mb-3 pt-2 sidebar-setting">Sidebar Color</h6>
+
+             <div class="form-check sidebar-setting">
+                 <input class="form-check-input" type="radio" name="sidebar-color" id="sidebar-color-light"
+                     value="light" onchange="document.body.setAttribute('data-sidebar', 'light')">
+                 <label class="form-check-label" for="sidebar-color-light">Light</label>
+             </div>
+             <div class="form-check sidebar-setting">
+                 <input class="form-check-input" type="radio" name="sidebar-color" id="sidebar-color-dark" value="dark"
+                     onchange="document.body.setAttribute('data-sidebar', 'dark')">
+                 <label class="form-check-label" for="sidebar-color-dark">Dark</label>
+             </div>
+             <div class="form-check sidebar-setting">
+                 <input class="form-check-input" type="radio" name="sidebar-color" id="sidebar-color-brand"
+                     value="brand" onchange="document.body.setAttribute('data-sidebar', 'brand')">
+                 <label class="form-check-label" for="sidebar-color-brand">Brand</label>
+             </div>
+
+             <h6 class="mt-4 mb-3 pt-2">Direction</h6>
+
+             <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="layout-direction" id="layout-direction-ltr"
+                     value="ltr">
+                 <label class="form-check-label" for="layout-direction-ltr">LTR</label>
+             </div>
+             <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="layout-direction" id="layout-direction-rtl"
+                     value="rtl">
+                 <label class="form-check-label" for="layout-direction-rtl">RTL</label>
+             </div>
+
+         </div>
+
+     </div> <!-- end slimscroll-menu-->
+ </div>
+ <!-- /Right-bar -->
+
+ <!-- Right bar overlay-->
+
+    <!-- /Right-bar -->
+
+    <!-- JAVASCRIPT -->
+    <!-- JAVASCRIPT -->
+<script src="./assets/libs/jquery/jquery.min.js"></script>
+<script src="./assets/libs/bootstrap.min.js"></script>
+<script src="./assets/libs/metismenu.min.js"></script>
+<script src="./assets/libs/simplebar.min.js"></script>
+<script src="./assets/libs/node-waves.min.js"></script>
+<script src="./assets/libs/feather-icons.min.js"></script>
+<!-- pace js -->
+<script src="./assets/libs/pace-js.min.js"></script>
+    <script src="./assets/libs/apexcharts.min.js"></script>
+
+    <!-- Plugins js-->
+    <script src="./assets/libs/jquery-vectormap.min.js"></script>
+    
+    <!-- dashboard init -->
+    <script src="./assets/js/dashboard.init.js"></script>
+    
+
+<script src="./assets/js/app.min.js"></script>
+</body>
+
+</html>
